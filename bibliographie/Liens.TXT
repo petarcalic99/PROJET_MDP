@@ -1,1 +1,4 @@
 https://books.google.rs/books?hl=en&lr=&id=JHvz1elubJQC&oi=fnd&pg=PA1&dq=Handbook+of+Learning+and+Approximate+Dynamic+Programming&ots=Ul-Dy6cn0W&sig=lEcn3u_GHjLx7Q9kQ6JmCqH-16A&redir_esc=y#v=onepage&q&f=false
+https://books.google.rs/books?hl=en&lr=&id=ogsrj7PnyHIC&oi=fnd&pg=PR15&dq=Foundations+of+Stochastic+Inventory+Theory&ots=2PNexVGSra&sig=xYIQ649ZsNzuUWpqtZy8e-5jRzo&redir_esc=y#v=onepage&q=Foundations%20of%20Stochastic%20Inventory%20Theory&f=false
+https://books.google.rs/books?hl=en&lr=&id=VvBjBAAAQBAJ&oi=fnd&pg=PT9&dq=Markov+Decision+Processes:+Discrete+Stochastic+Dynamic+Programming&ots=rsgBsNP_OP&sig=jTDx0zQyv-aZpmKUc651Lp9N7zs&redir_esc=y#v=onepage&q=Markov%20Decision%20Processes%3A%20Discrete%20Stochastic%20Dynamic%20Programming&f=false
+https://books.google.rs/books?hl=en&lr=&id=njvtBwAAQBAJ&oi=fnd&pg=PR21&dq=linear+programming&ots=6oMBrX_-Zm&sig=dvZm06mV6neY2vJkS4rLj702AwM&redir_esc=y#v=onepage&q=linear%20programming&f=false
