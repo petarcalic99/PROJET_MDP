@@ -22,68 +22,39 @@ print("#")
 
 #vector to store the dimension
 trans=sparseMatrixVector(dimSA)
-
 P0 = sparseMatrix(dimSS,dimSS)
-P0.addToEntry(0,0,0)
 P0.addToEntry(0,1,0.875)
 P0.addToEntry(0,2,0.0625)
 P0.addToEntry(0,3,0.0625)
-P0.addToEntry(1,0,0)
 P0.addToEntry(1,1,0.75)
-P0.addToEntry(1,2,0)
 P0.addToEntry(1,3,0.25)
-P0.addToEntry(2,0,0)
-P0.addToEntry(2,1,0)
 P0.addToEntry(2,2,0.5)
 P0.addToEntry(2,3,0.5)
-P0.addToEntry(3,0,0)
-P0.addToEntry(3,1,0)
-P0.addToEntry(3,2,0)
 P0.addToEntry(3,3,1)
 trans[0] = P0
 
+
 P1= sparseMatrix(dimSS, dimSS);
 P1.addToEntry(0,0,0.875)
-P1.addToEntry(0,1,0)
 P1.addToEntry(0,2,0.125)
-P1.addToEntry(0,3,0)
-P1.addToEntry(1,0,0)
 P1.addToEntry(1,1,0.75)
 P1.addToEntry(1,2,0.125)
 P1.addToEntry(1,3,0.125)
 P1.addToEntry(2,0,0.8)
-P1.addToEntry(2,1,0)
 P1.addToEntry(2,2,0.2)
-P1.addToEntry(2,3,0)
-P1.addToEntry(3,0,0)
-P1.addToEntry(3,1,0)
-P1.addToEntry(3,2,0)
 P1.addToEntry(3,3,1)
 trans[1] = P1
 
 P2 = sparseMatrix(dimSS, dimSS);
-P2.addToEntry(0,0,0)
-P2.addToEntry(0,1,0)
 P2.addToEntry(0,2,1)
-P2.addToEntry(0,3,0)
 P2.addToEntry(1,0,1)
-P2.addToEntry(1,1,0)
-P2.addToEntry(1,2,0)
-P2.addToEntry(1,3,0)
-P2.addToEntry(2,0,0)
 P2.addToEntry(2,1,1)
-P2.addToEntry(2,2,0)
-P2.addToEntry(2,3,0)
-P2.addToEntry(3,0,0)
-P2.addToEntry(3,1,0)
-P2.addToEntry(3,2,0)
 P2.addToEntry(3,3,1)
 trans[2] = P2
 
 
 
 Reward  = sparseMatrix(dimSS, dimSA);
-Reward.addToEntry(0,0,0)
 Reward.addToEntry(0,1,4000)
 Reward.addToEntry(0,2,6000)
 
