@@ -16,14 +16,16 @@ pen = 100000
 R = np.array(( ((15, 10, 5, pen,pen,pen,pen,pen),(pen, pen, pen, 10,30,pen,pen,pen), (pen, pen, pen, pen,15,pen,pen,pen), (pen, pen, pen, pen,pen,10,pen,pen),  (pen, pen, pen, pen,pen,20,pen,pen),(pen, pen, pen, pen,pen,60,pen,pen),(pen, pen, pen, pen,pen,pen,5,pen), (pen, pen, pen, 5,pen,pen,pen,15),(pen, pen, pen, pen,0,pen,pen,0)) ))  
 print(P)
 print(R)
+Pm = P*-1
+Rm = R*-1
 
-
-
-vi = mdptoolbox.mdp.ValueIteration(P, R,1,0.0001,1000)
+start_time = time.time()
+vi = mdptoolbox.mdp.ValueIteration(P, Rm,1,0.0001,1000)
+print("temps de modélisation--- %s seconds ---" % (time.time() - start_time))
 start_time = time.time()
 vi.run()
 print("--- %s seconds ---" % (time.time() - start_time))
 
 print(vi.policy)
 print(vi.V)
-print(vi.iter)
+print("nombre d itérations:",vi.iter)
