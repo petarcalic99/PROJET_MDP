@@ -19,7 +19,7 @@ maxIter = 1000
 gamma = 0.5
 
 
-dimSS = env.observation_space.n
+dimSS = env.observation_space.n  # -465     bug à partir de l'état 35
 dimSA =  env.action_space.n
 actionSpace =marmoteInterval(0,dimSA-1)
 stateSpace = marmoteInterval(0,dimSS-1)
@@ -108,7 +108,7 @@ print("Fin de la construction MDP\n")
 
 
 print("Affichage MDP")
-#mdp1.writeMDP()
+mdp1.writeMDP()
 
 
 print("Calcul iteration valeur")
