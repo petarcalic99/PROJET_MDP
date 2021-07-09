@@ -1,5 +1,5 @@
 """
- @brief frozen lake 8*8
+ @brief taxi
  @author Calic Petar
  @date 30/06
  @version 1.1
@@ -117,9 +117,9 @@ start_time = time.time()
 optimum = mdp1.valueIteration(epsilon, maxIter)
 print("--- %s seconds ---" % (time.time() - start_time))
 
-print("Calcul par iteration valeur modifiee")
+print("Calcul par iteration de politique modifiee")
 start_time = time.time()
-optimum2 = mdp1.policyIterationModified(epsilon, maxIter, 0.001, 100)
+optimum2 = mdp1.policyIterationModified(epsilon, maxIter, 0.001,100)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 
@@ -131,8 +131,8 @@ optimum3 = mdp1.valueIterationGS(epsilon, maxIter)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 print("********************************")
-print("Solution iteration valeur")
-#optimum.writeSolution()
+print("Solution iteration valeur xxxxx")
+optimum.writeSolution()
 
 
 
