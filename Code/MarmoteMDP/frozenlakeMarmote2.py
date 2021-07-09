@@ -16,11 +16,10 @@ env= gym.make("FrozenLake8x8-v0")
 critere = "max"
 epsilon = 0.0001
 maxIter = 1000
-#pena = -10000000000
 
 
-dimSS = 64
-dimSA = 4
+dimSS = env.observation_space.n  # -21     #bug à partir de l'état 43
+dimSA =  env.action_space.n
 actionSpace =marmoteInterval(0,dimSA-1)
 stateSpace = marmoteInterval(0,dimSS-1)
 
@@ -90,8 +89,9 @@ print("-la modélisation prend - %s seconds ---" % (time.time() - start_time))
 
 print("Fin de la construction MDP\n")
 
+
 print("Affichage MDP")
-mdp1.writeMDP()
+#mdp1.writeMDP()
 
 print("Calcul iteration valeur")
 #call the function to solve the MDP.       Ajout de time
@@ -103,6 +103,10 @@ print(" Le calcul de la solution prend %s seconds ---" % (time.time() - start_ti
 
 print("********************************")
 print("Solution iteration valeur")
+optimum.writeSolution()
+
+
+
 '''
 print("********************************")
 pi = [0,3,3,3,0,0,0,0,3,1,0,0,0,2,1,0]
