@@ -61,7 +61,18 @@ print("nombre d itérations:",vi.iter)
 
 pi = vi.policy
 
+start_time = time.time()
+pim = mdptoolbox.mdp.PolicyIteration(P, R, 0.5)
+print("temps de modélisation--- %s seconds ---" % (time.time() - start_time))
 
+start_time = time.time()
+pim.run()
+print("temps de calcul %s seconds ---" % (time.time() - start_time))
+
+print("V de PolIter:",pim.V)
+print("nombre d itérations:",pim.iter)
+
+'''
 print("Simulation de la politique")
 gainFinal=0
 for i in range(20):
@@ -80,3 +91,4 @@ for i in range(20):
     else: 
         print("*****objectif NON atteint")
 print("Pourcentage de reussite:",gainFinal/20*100, "%")    
+'''
